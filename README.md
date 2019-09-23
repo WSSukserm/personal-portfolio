@@ -10,4 +10,4 @@ These are the tools used to make this magic happen:
 + JavaScript
 
 ## Like to Know More?
-Please feel free to view small projects on my [CodePen] (https://codepen.io/wssukserm) or view my [LinkedIn] (https://www.linkedin.com/in/wsnowsukserm).
+Please feel free to view small projects on my [CodePen](https://codepen.io/wssukserm) or view my [LinkedIn](https://www.linkedin.com/in/wsnowsukserm).

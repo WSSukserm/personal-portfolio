@@ -1,0 +1,204 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Snow Sukserm | Frontend Developer</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="shortcut icon" href="img/logo-2.png">
+  <link href="https://fonts.googleapis.com/css?family=Cutive%7CCutive+Mono&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body > <!-- possibly place background="img/flower-bkgd.png" here -->
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+  <div id="overlay"></div>
+  <!-- ====Header & Nav bar ====-->
+<!--====  <div class="overlay"></div> OVERLAY ====-->
+  <header class="main-header">
+    <div class="header-wrapper">
+
+      <figure class="logo">
+        <a href="#">
+          <img id="logo" src="img/logo.png" alt="home logo">
+        </a>
+        <!-- TODO: Code responsive nav that works on mobile & tablet device -->
+        <div class="navBars" onclick="openNav()"><!-- &#9776;-->
+          <img id="nav-bars" src="img/nav-bars.png" alt="navigation hamburger">
+        </div>
+      </figure>
+
+      <nav id="nav">
+        <span class="closeBttn" onclick="closeNav()">&times;</span>
+        <ul>
+          <li>
+            <a href="#about" class="navItem" onclick="closeNav()">About</a>
+          </li>
+          <li>
+            <a href="#projects" class="navItem"  onclick="closeNav()">Projects</a>
+          </li>
+          <li>
+            <a href="#contact" class="navItem" onclick="closeNav()">Contact</a>
+          </li>
+          <li>
+            <a href="#resume" class="navItem" onclick="closeNav()">Resume</a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+
+      <figure class="hero-img">
+        <img src="img/dev-desk.jpg" alt="desk-flatlay">
+      </figure>
+
+    <div class="identity">
+      <h1>Snow Sukserm <span id="id-divider">&#149;</span></h1>
+      <h2>Frontend Web Developer</h2>
+    </div>
+
+  </header>
+
+  <main>
+
+  <!-- ABOUT SECTION -->
+
+    <div class="about-me" id="about">
+      <figure class="about-me-section">
+        <img class="section-img" id="about-title" src="img/about-title.png" alt="about section title">
+      </figure>
+      <div id="about-section-breaker"></div>
+      <div id="about-content">
+        <figure class="my-img">
+          <img id="about-me-img" src="img/about-me-img.png" alt="about section title">
+        </figure>
+        <div class="about-wrapper">
+          <p>
+            Hi, I'm Snow and I'm a problem solver! It's what I love most about being a web developer. After starting my coding journey with Skillcrush, my passion for creating with code hasn't stop. Click through my website portfolio to find what I've been working on!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT SECTION -->
+    <div class="projects" id="projects">
+      <figure id="project-title">
+        <div id="proj-section-breaker"></div>
+        <img class="section-img" src="img/projects-title.png" alt="projects section title">
+      </figure>
+
+      <!-- PROJECT SLIDESHOW ====-->
+      <div class="slideshow-container">
+
+        <!-- PROJECT IMGS WITH CAPTION ====-->
+        <div class="slides">
+          <img class="image fade" src="img/rogue-pickings-project.png" alt="Rogue Pickings Project">
+          <img class="image fade" src="img/magic-8-ball-project.png" alt="Magic 8 Ball Project">
+          <img class="image fade" src="img/unplugged-project.png" alt="Unplugged Project">
+        </div>
+
+        <!-- IMAGE BUTTONS ====-->
+        <form class="image-bttn" target="_blank">
+          <button class="caption" formaction="https://wssukserm.github.io/rogue-pickings-bonus-project/"> Rogue Pickings </button>
+          <button class="caption" formaction="https://wssukserm.github.io/magic-8-ball/">Magic 8 Ball </button>
+          <button class="caption" formaction="https://wssukserm.github.io/unplugged-project/">Unplugged Project </button>
+          <button class="showCode" formaction="https://github.com/WSSukserm/rogue-pickings-bonus-project"> Rogue Codes </button>
+          <button class="showCode" formaction="https://github.com/WSSukserm/magic-8-ball">8-Ball Codes </button>
+          <button class="showCode" formaction="https://github.com/WSSukserm/unplugged-project">Unplugged Codes</button>
+        </form>
+
+        <!-- NEXT & PREV BUTTONS ====-->
+        <div class="slide-bttns">
+          <span class="prev" onclick="plusSlides(-1)">&#10094;</span>
+          <span class="next" onclick="plusSlides(1)">&#10095;</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  <!-- CONTACT SECTION -->
+    <div class="contact" id="contact">
+      <figure class="contact-section">
+        <img class="section-img"src="img/contact-title.png" alt="projects section title">
+      </figure>
+
+      <div id="contact-section-breaker"></div>
+
+      <div class="know-more-tablet">
+        <h3>Like to know more?</h3>
+        <h4>Click to <br> download my resume!</h4>
+        <!-- TODO: Change out document to update resume for web development/customer service -->
+        <form class="resume-bttn" id="resume" target="_blank">
+          <button formaction="docs/frontend-web-dev-resume.pdf">Download</button>
+        </form>
+      </div>
+
+      <div class="contact-wrapper">
+
+        <div class="email-wrapper">
+          <p>Email me at:</p>
+        </div>
+
+        <a href="mailto:ssukserm10@aol.com">ssukserm10@aol.com</a>
+
+        <div class="socials-wrapper">
+          <p>Or connect with me here:</p>
+        </div>
+
+        <ul class="socials">
+          <li>
+            <a href="https://github.com/WSSukserm" target="_blank">
+              <img class="socials-link" src="img/github-icon.png" alt="GitHub">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/wsnowsukserm/" target="_blank">
+              <img class="socials-link" src="img/linkedin-icon.png" alt="LinkedIn">
+            </a>
+          </li>
+          <li>
+            <a href="https://codepen.io/wssukserm/" target="_blank">
+              <img class="socials-link" src="img/codepen-icon.png" alt="CodePen">
+            </a>
+          </li>
+        </ul>
+        <div class="know-more-mobile">
+          <h4>Click to download my resume!</h4>
+          <!-- TODO: Change out document to update resume for web development/customer service -->
+          <form class="resume-bttn" id="resume" target="_blank">
+            <button formaction="docs/frontend-web-dev-resume.pdf" class="resume">Download</button>
+          </form>
+        <div>
+      </div>
+
+    </div>
+  </main>
+
+<!-- FOOTER ====-->
+  <footer>
+      <small>&#9400; 2019 Snow Sukserm</small>
+  </footer>
+
+  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+  </script>
+</body>
+
+</html>
